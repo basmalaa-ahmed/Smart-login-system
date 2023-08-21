@@ -1,34 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="css/all.min.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Smart Login System</title>
-
     </head>
     <body>
-        <div class="container">
-            <div class="form text-center w-75 mx-auto p-5">
-                <h1>Smart Login System</h1>
-                <input type="email" placeholder="Enter Your Email" class="form-control w-75 mx-auto mt-3" id="logInEmail">
-                <input type="password" placeholder="Enter Your password" class="form-control w-75  mx-auto mt-3" id="logInPassword">
-                <div class="msgs text-center">
-                    <p class="text-danger d-none" id="fillMsg">All inputs is required</p>
-                    <p class="text-danger d-none" id="wrongMsg">your email or password is incorrect </p>
-                </div>
-                <button class="btn btn-outline-info mt-4 w-75 "onclick="log()" id="logInBtn">Login</button>
-                <p class="text-white mt-2">You have an account? <a href="signUp.html" class="text-decoration-none text-white">Sign Up</a> </p>
-
+       <header class="header" id="header">
+        <nav class="nav container">
+            <a href=""class="nav_logo"> Basmala</a>
+            <div class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active_link">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="fa-solid fa-book"></i>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#work" class="nav_link">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+              
             </div>
-        </div>
-      
+            <!-- Theme change button -->
+            <i class="fa-solid fa-moon"></i>
+        </nav>
 
+       </header>
+       <!-- =========================================Main==================================== -->
+       <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <span class="home_greeting">Hello, I'm</span>
+                    <h1 class="home_name">Basmala Ahmed</h1>
+                    <h3 class="home_educated">Front-end developer</h3>
+                    <div class="home_buttons">
+                        <a download="" href="Basmala Ahmed Frontend Developer.pdf" class="button button--ghost">Download CV</a>
+                        <a href="#about" class="button">About Me</a>
+                    
+                    </div>
 
-
-
-
-       <script src="js/bootstrap.bundle.min.js"></script> 
-       <script src="js/index.js"></script>
+                </div>
+                <div class="home_social">
+                    <a href="https://www.linkedin.com/in/basmala-ahmed-/" class="home_social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/basmalaa-ahmed"class="home_social-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <a href="#about" class="home_scroll">
+                    <i class="fa-solid fa-computer-mouse home_scroll-icon"></i>
+                    <span class="home_scroll-name">Scroll down</span>
+                </a>
+            </div>
+        </section>
+       </main>
+        <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+        <script src="js/index.js"></script>
     </body>
 </html>
